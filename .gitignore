@@ -1,0 +1,23 @@
+# Visual Studio local workspace folder
+.vs/
+
+# Build artifacts
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.log
+
+# Visual Studio generated files
+*.suo
+*.user
+*.vcxproj.user
+*.opensdf
+*.sdf
+*.VC.db
+
+# Intermediate and output folders
+Debug/
+Release/
+x64/
+ipch/
