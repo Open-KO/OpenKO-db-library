@@ -2,8 +2,8 @@
 #include "Connection.h"
 #include "DatasourceConfig.h"
 #include "Exceptions.h"
-#include "hooks.h"
 #include "utils.h"
+#include <spdlog/spdlog.h>
 
 namespace db
 {
@@ -52,7 +52,7 @@ namespace db
 			// reconnect was necessary and successful
 			if (result == 1)
 			{
-				utils::Log("ReconnectIfDisconnected(): reconnect successful");
+				spdlog::info("ReconnectIfDisconnected(): reconnect successful");
 			}
 		}
 		catch (const nanodbc::database_error& dbErr)

@@ -4,7 +4,6 @@
 
 #include "ConnectionManager.h"
 #include "PoolConnection.h"
-#include "hooks.h"
 
 namespace db
 {

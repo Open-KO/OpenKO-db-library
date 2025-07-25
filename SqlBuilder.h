@@ -5,8 +5,7 @@
 #include <unordered_set>
 #include <iostream>
 #include <vector>
-
-#include "utils.h"
+#include <spdlog/spdlog.h>
 
 namespace db
 {
@@ -106,9 +105,7 @@ namespace db
 				query += " " + PostWhereClause;
 			}
 
-#if defined(_DEBUG)
-			std::cout << "using query: " << query << '\n';
-#endif
+			spdlog::debug("using query: {}", query);
 			return query;
 		}
 
@@ -211,10 +208,7 @@ namespace db
 				i++;
 			}
 
-#if defined(_DEBUG)
-			std::cout << "using query: " << query << '\n';
-#endif
-
+			spdlog::debug("using query: {}", query);
 			return query;
 		}
 		
@@ -230,9 +224,7 @@ namespace db
 			{
 				if (!isValidColumnName(col))
 				{
-#if defined(_DEBUG)
-					utils::Log(std::format("WARN: Invalid column name: {}.{}", ModelType::TableName(), col));
-#endif
+					spdlog::warn("Invalid column name: {}.{}", ModelType::TableName(), col);
 					continue;
 				}
 
