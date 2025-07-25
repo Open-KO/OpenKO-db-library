@@ -1,9 +1,7 @@
 ﻿#pragma once
 
-#include <format>
 #include <string>
 #include <unordered_set>
-#include <iostream>
 #include <vector>
 #include <spdlog/spdlog.h>
 
@@ -134,9 +132,8 @@ namespace db
 			{
 				query += " " + PostWhereClause;
 			}
-#if defined(_DEBUG)
-			std::cout << "using query: " << query << '\n';
-#endif
+			
+			spdlog::debug("using query: {}", query);
 			return query;
 		}
 
@@ -156,10 +153,7 @@ namespace db
 			}
 			insertQuery += ") VALUES (" + paramList + ")";
 
-#if defined(_DEBUG)
-			std::cout << "using query: " << insertQuery << '\n';
-#endif
-			
+			spdlog::debug("using query: {}", insertQuery);
 			return insertQuery;
 		}
 
