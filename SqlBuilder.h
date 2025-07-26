@@ -103,7 +103,7 @@ namespace db
 				query += " " + PostWhereClause;
 			}
 
-			spdlog::debug("using query: {}", query);
+			spdlog::trace("using query: {}", query);
 			return query;
 		}
 
@@ -133,7 +133,7 @@ namespace db
 				query += " " + PostWhereClause;
 			}
 			
-			spdlog::debug("using query: {}", query);
+			spdlog::trace("using query: {}", query);
 			return query;
 		}
 
@@ -153,7 +153,7 @@ namespace db
 			}
 			insertQuery += ") VALUES (" + paramList + ")";
 
-			spdlog::debug("using query: {}", insertQuery);
+			spdlog::trace("using query: {}", insertQuery);
 			return insertQuery;
 		}
 
@@ -202,7 +202,7 @@ namespace db
 				i++;
 			}
 
-			spdlog::debug("using query: {}", query);
+			spdlog::trace("using query: {}", query);
 			return query;
 		}
 		
