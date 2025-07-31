@@ -1,14 +1,12 @@
 ﻿#pragma once
 
-#include <iostream>
-#include <format>
 #include <string>
 
 #include "ConnectionManager.h"
 #include "SqlBuilder.h"
-#include "utils.h"
 
 #include <nanodbc/nanodbc.h>
+#include <spdlog/spdlog.h>
 
 namespace db
 {
@@ -120,10 +118,7 @@ namespace db
 				auto itr = columnBindingsMap.find(columnName);
 				if (itr == columnBindingsMap.end())
 				{
-#if defined(_DEBUG)
-					utils::Log(std::format("WARN: No binding found for : {}.{}", T::TableName(), columnName));
-#endif
-
+					spdlog::warn("No binding found for : {}.{}", T::TableName(), columnName);
 					bindingsIndex.push_back(nullptr);
 					continue;
 				}
