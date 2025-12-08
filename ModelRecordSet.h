@@ -45,7 +45,7 @@ namespace db
 		}
 
 		/// \brief fetches the current result set's column count
-		const short columnCount() const
+		short columnCount() const
 		{
 			return _columnCount;
 		}

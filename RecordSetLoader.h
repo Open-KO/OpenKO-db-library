@@ -44,7 +44,7 @@ namespace recordset_loader
 			return _error;
 		}
 
-		inline const short GetColumnCount() const
+		inline short GetColumnCount() const
 		{
 			return _columnCount;
 		}

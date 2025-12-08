@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include <string>
+#include <vector>
 
 #include "ConnectionManager.h"
 #include "SqlBuilder.h"
