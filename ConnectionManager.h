@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <assert.h>
 
-import ModelUtil;
+#include <ModelUtil/ModelUtil.h>
 
 namespace nanodbc
 {

@@ -3,7 +3,7 @@
 #include <memory>
 #include "Connection.h"
 
-import ModelUtil;
+#include <ModelUtil/ModelUtil.h>
 
 namespace db
 {
