@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_MODELRECORDSET_H
+#define DBLIBRARY_MODELRECORDSET_H
+
+#pragma once
 
 #include <memory>
 #include <optional>
@@ -188,3 +191,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_MODELRECORDSET_H

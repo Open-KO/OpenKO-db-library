@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_CONNECTION_H
+#define DBLIBRARY_CONNECTION_H
+
+#pragma once
 
 #include <memory>
 #include <nanodbc/nanodbc.h>
@@ -43,3 +46,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_CONNECTION_H

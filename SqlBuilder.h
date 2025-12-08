@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_SQLBUILDER_H
+#define DBLIBRARY_SQLBUILDER_H
+
+#pragma once
 
 #include <string>
 #include <unordered_set>
@@ -258,3 +261,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_SQLBUILDER_H

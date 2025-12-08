@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_STOREDPROC_H
+#define DBLIBRARY_STOREDPROC_H
+
+#pragma once
 
 #include <memory>
 
@@ -29,3 +32,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_STOREDPROC_H

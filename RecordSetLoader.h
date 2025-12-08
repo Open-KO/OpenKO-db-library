@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_RECORDSETLOADER_H
+#define DBLIBRARY_RECORDSETLOADER_H
+
+#pragma once
 
 #include <string>
 #include <functional>
@@ -128,3 +131,5 @@ namespace recordset_loader
 	};
 
 }
+
+#endif // DBLIBRARY_RECORDSETLOADER_H

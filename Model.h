@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_MODEL_H
+#define DBLIBRARY_MODEL_H
+
+#pragma once
 
 #include <string>
 #include <vector>
@@ -130,3 +133,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_MODEL_H

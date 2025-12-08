@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_EXCEPTIONS_H
+#define DBLIBRARY_EXCEPTIONS_H
+
+#pragma once
 
 #include <stdexcept>
 #include <string>
@@ -28,3 +31,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_EXCEPTIONS_H

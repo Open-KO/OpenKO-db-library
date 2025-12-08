@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_FWD_H
+#define DBLIBRARY_FWD_H
+
+#pragma once
 
 namespace db
 {
@@ -6,3 +9,5 @@ namespace db
 	class ConnectionManager;
 	struct DatasourceConfig;
 }
+
+#endif // DBLIBRARY_FWD_H

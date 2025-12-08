@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_RECORDSETLOADER_VECTOR_H
+#define DBLIBRARY_RECORDSETLOADER_VECTOR_H
+
+#pragma once
 
 #include "RecordSetLoader.h"
 
@@ -48,3 +51,5 @@ namespace recordset_loader
 	};
 
 }
+
+#endif // DBLIBRARY_RECORDSETLOADER_VECTOR_H

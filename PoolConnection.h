@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_POOLCONNECTION_H
+#define DBLIBRARY_POOLCONNECTION_H
+
+#pragma once
 
 #include <memory>
 #include "Connection.h"
@@ -38,3 +41,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_POOLCONNECTION_H

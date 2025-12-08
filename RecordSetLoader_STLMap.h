@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_RECORDSETLOADER_STLMAP_H
+#define DBLIBRARY_RECORDSETLOADER_STLMAP_H
+
+#pragma once
 
 #include "RecordSetLoader.h"
 
@@ -67,3 +70,5 @@ namespace recordset_loader
 	};
 
 }
+
+#endif // DBLIBRARY_RECORDSETLOADER_STLMAP_H

@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_DATASOURCECONFIG_H
+#define DBLIBRARY_DATASOURCECONFIG_H
+
+#pragma once
 
 #include <string>
 #include <string_view>
@@ -23,3 +26,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_DATASOURCECONFIG_H

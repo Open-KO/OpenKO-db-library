@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_CONNECTIONMANAGER_H
+#define DBLIBRARY_CONNECTIONMANAGER_H
+
+#pragma once
 
 #include <memory>
 #include <mutex>
@@ -116,3 +119,5 @@ namespace db
 	};
 
 }
+
+#endif // DBLIBRARY_CONNECTIONMANAGER_H

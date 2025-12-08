@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿#ifndef DBLIBRARY_UTILS_H
+#define DBLIBRARY_UTILS_H
+
+#pragma once
 
 #include <string>
 
@@ -16,3 +19,5 @@ namespace db
 	}
 
 }
+
+#endif // DBLIBRARY_UTILS_H
